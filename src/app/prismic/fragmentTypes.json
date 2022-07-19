@@ -1,0 +1,48 @@
+{
+    "__schema": {
+      "types": [
+        {
+          "kind": "UNION",
+          "name": "Sample_Card",
+          "possibleTypes": [
+            {
+              "name": "title"
+            },
+            {
+              "name": "content"
+            },
+            {
+              "name": "image"
+            }
+          ]
+        },
+        {
+          "kind": "INTERFACE",
+          "name": "_Document",
+          "possibleTypes": [
+            {
+              "name": "Card"
+            }
+          ]
+        },
+        {
+          "kind": "INTERFACE",
+          "name": "_Linkable",
+          "possibleTypes": [
+            {
+              "name": "Card"
+            },
+            {
+              "name": "_ExternalLink"
+            },
+            {
+              "name": "_FileLink"
+            },
+            {
+              "name": "_ImageLink"
+            }
+          ]
+        }
+      ]
+    }
+  }
